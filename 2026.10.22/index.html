@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <menu>
+            <a href="index.html">Strona Główna</a>
+            <a href="oferta.html">Oferta</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="o-nas.html">O nas</a>
+
+        </menu>
+        
+        <h1>Strona Główna</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nobis quas doloribus cupiditate alias iure, voluptate sunt sed quae, itaque aliquam cum. Odit, exercitationem. 
+            Fugit molestiae ullam asperiores ipsum doloremque quaerat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Possimus, laudantium doloremque voluptas magni impedit, sint nulla pariatur adipisci animi, facere ducimus nisi? 
+            Facilis alias quisquam illo veniam cumque, aliquam doloribus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Placeat exercitationem delectus recusandae in numquam corrupti distinctio harum enim, ex dolore qui dolores est atque iusto quis, velit nisi suscipit quasi!</p>
+        
+        
+        <footer>Karol Ziętkiewicz 4E</footer>
+        <!-- Miejsce na stronie index.html, gdzie wyświetla się komunikat (opcjonalnie) -->
+<div id="komunikatPowitalny"></div>
+
+<script>
+   
+    const parametryUrl = new URLSearchParams(window.location.search);
+    
+    
+    const daneZUrl = Object.fromEntries(parametryUrl.entries());
+
+    
+    if (Object.keys(daneZUrl).length > 0) {
+        
+
+        console.log("Dane z formularza: ");
+        console.log(daneZUrl); 
+    }
+        
+</script>
+
+    </body>
+</html>
